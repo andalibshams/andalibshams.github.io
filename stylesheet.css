@@ -1,0 +1,11 @@
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+th.first{
+  width: 30%
+}
+th.second{
+  width: 70%; /* Not necessary, since only 70% width remains */
+}
