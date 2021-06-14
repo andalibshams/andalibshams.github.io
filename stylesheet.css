@@ -3,9 +3,9 @@ table {
   border: 1px solid #000;
 }
 
-th.first{
+td.first{
   width: 30%
 }
-th.second{
+td.second{
   width: 70%; /* Not necessary, since only 70% width remains */
 }
