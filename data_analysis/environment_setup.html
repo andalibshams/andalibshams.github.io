@@ -36,26 +36,27 @@
         <a href="../resources.html">Resources</a>
     </p>
      
-    <h3>VISSIM-COM Python Environment setup</h3>
+    <h3>Data Analysis Environment setup</h3>
       
      <ol>
         <li> Download Python- install miniconda. It is easy to organize and create clear environment using <a href="https://docs.conda.io/en/latest/miniconda.html"> Miniconda</a> (also does not require admin right to install).
         <li> <p>Follow start menu → Anaconda 3 64-bit → Anaconda prompt.</p> 
-            <img src = "environment_setup/anaconda prompt.PNG">
+            <img src = "../environment_setup/anaconda prompt.PNG">
         <li> <p>Create an environment in the anaconda prompt by command. Here myenv is the environment name I have used. </p>
              <code> conda create --name myenv </code>
-             <p><img src = "environment_setup/create env.PNG"></p>
+             <p><img src = "../environment_setup/create env.PNG"></p>
              <p>Creating environment ensures that in future if we install different version of python, the current environment will not conflict with the future python version. So, we don’t need to bother with compatibility issues.</p>
         <li> <p>Now we need activate ‘myenv’ by command- </p>
              <code> conda activate myenv </code>
-             <p><img src = "environment_setup/activate env.PNG"></p>
+             <p><img src = "../environment_setup/activate env.PNG"></p>
         <li> <p>Install numpy package into myenv- (numpy package is helpful to handle n-dimensional array)</p>
              <code>conda install numpy</code>
+        <li><p>Install panda package into myenv- (panda is a data analysis and manipulation tool. )</p>
+             <code>conda install -c anaconda pandas</code></li>
+         <li><p>Install matplotlib package into myenv- (Matplotlib is a data visualization library for python )</p>
+             <code>conda install -c conda-forge matplotlib</code></li>
         <li> <p> I personally prefer jupyter lab instead of the notebook version. In jupyter lab, we can output images in new window, and simply holding alt+click takes us to function definition. I like these features. </p>
-          <code> conda install -c conda-forge jupyterlab </code>
-
-            
-        
+          <code> conda install -c conda-forge jupyterlab </code>        
      </ol>
       
   </body>
